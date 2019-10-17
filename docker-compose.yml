@@ -1,28 +1,21 @@
 # Version of docker-compose
 version: '3'
 
-# Containers we are going to run
 services:
-  # # Our Phoenix container
-  # phoenix:
-  #   # The build parameters for this container.
-  #   build:
-  #     # Here we define that it should build from the current directory
-  #     context: .
-  #   environment:
-  #     # Variables to connect to our Postgres server
-  #     PGUSER: postgres
-  #     PGPASSWORD: postgres
-  #     PGDATABASE: database_name
-  #     PGPORT: 5432
-  #     # Hostname of our Postgres container
-  #     PGHOST: db
-  #   ports:
-  #     # Mapping the port to make the Phoenix app accessible outside of the container
-  #     - "4000:4000"
-  #   depends_on:
-  #     # The db container needs to be started before we start this container
-  #     - postgres
+  phoenix:
+    build:
+      context: ./hello
+    environment:
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: postgres
+      PGPORT: 5432
+      # PGHOST refers to the service postgres that we have defined in this docker-compose file
+      PGHOST: postgres
+    ports:
+      - "4000:4000"
+    depends_on:
+      - postgres
 
   # Use the pre-defined PostgreSQL image
   # NOTE: We have to connect to the default database and get that running FIRST before use mix ecto.create
