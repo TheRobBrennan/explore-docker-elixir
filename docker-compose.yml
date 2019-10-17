@@ -14,6 +14,9 @@ services:
       PGHOST: postgres
     ports:
       - "4000:4000"
+    volumes:
+      # Explicitly map our Phoenix app folder to the path on our Docker container for static hot reloading to work
+      - ./hello:/app
     depends_on:
       - postgres
 
@@ -29,9 +32,12 @@ services:
     ports:
       - "5432:5432"
     restart: always
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-# Define the volumes
-volumes:
-  pgdata:
+    # volumes:
+    #   # Use for an ephemeral PostgreSQL database; make sure you uncomment volumes below
+    #   - pgdata:/var/lib/postgresql/data
 
+      # # Use to persist data in PostgreSQL database; make sure you comment out volumes below
+      # - ./hello/_postgresql/data:/var/lib/postgresql/data
+
+# volumes:
+#   pgdata:
