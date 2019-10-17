@@ -6,6 +6,20 @@ This project is meant to serve as a starting point for exploring Elixir using Do
 
 The easiest way to use this repo is to have [Docker Desktop](https://www.docker.com/products/docker-desktop) installed and configured on your development machine.
 
+### Using Docker
+
+Once Docker has been installed on your system, you can spin up the project by running:
+
+```sh
+$ docker-compose up
+```
+
+When you're ready to spin down the project, you can run:
+
+```sh
+$ docker-compose down
+```
+
 ### Local development environment
 
 Before we Dockerize our application, let's take a look at what we would need to do if we wanted to install Elixir on our machine.
