@@ -32,3 +32,6 @@ npm-debug.log
 # we ignore priv/static. You may want to comment
 # this depending on your deployment strategy.
 /priv/static/
+
+# If you are persisting PostgreSQL data, do not check those files into source control
+_postgresql/data/
