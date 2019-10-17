@@ -8,6 +8,8 @@ The easiest way to use this repo is to have [Docker Desktop](https://www.docker.
 
 ### Using Docker
 
+#### Start the back-end PostgreSQL server
+
 Once Docker has been installed on your system, you can spin up the project by running:
 
 ```sh
@@ -18,6 +20,47 @@ When you're ready to spin down the project, you can run:
 
 ```sh
 $ docker-compose down
+```
+
+#### Create a Phoenix app
+
+We can run mix phx.new from any directory in order to bootstrap our Phoenix application. Phoenix will accept either an absolute or relative path for the directory of our new project. Assuming that the name of our application is hello, let's run the following command:
+
+```sh
+$ mix phx.new hello
+
+We are almost there! The following steps are missing:
+
+    $ cd hello
+
+Then configure your database in config/dev.exs and run:
+
+    $ mix ecto.create
+
+Start your Phoenix app with:
+
+    $ mix phx.server
+
+You can also run your app inside IEx (Interactive Elixir) as:
+
+    $ iex -S mix phx.server
+```
+
+Assuming your database server is running (you DID `Start the back-end PostgreSQL server` as directed above, right), let's ollow the advice above:
+
+```sh
+$ cd hello
+
+# Define your desired database settings in config/dev.exs and run:
+$ mix ecto.create
+
+# Start your Phoenix app
+$ mix phx.server
+
+# To exit, simply press CMD+C/CTRL+C twice
+
+# OPTIONAL: If you'd like to run your app in Interactive Elixir (iex)
+$ iex -S mix phx.server
 ```
 
 ### Local development environment
