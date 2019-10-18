@@ -25,3 +25,5 @@ Please refer to `./example-phoenix-hello/README.md` for instructions on getting 
 This example - based off the original blog post [Running Elixir in Docker Containers](https://www.poeticoding.com/running-elixir-in-docker-containers/) - is intended to show how you can poke around with [Elixir](https://elixir-lang.org) and have multiple Docker containers communicate with each other.
 
 Please refer to `./example-elixir-multiple-containers/README.md` for instructions on getting started.
+
+![example-elixir-multiple-containers/assets/docker_elixir_multiple_containers-1-1024x576.png](example-elixir-multiple-containers/assets/docker_elixir_multiple_containers-1-1024x576.png)
