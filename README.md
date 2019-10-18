@@ -19,3 +19,7 @@ This project is meant to serve as a starting point for exploring both [Elixir](h
 This example - contained in `./example-phoenix-hello` - demonstrates how to build a simple [Phoenix](https://phoenixframework.org) application on [Elixir](https://elixir-lang.org).
 
 Please refer to `./example-phoenix-hello/README.md` for instructions on getting started. If you already have [Docker Desktop](https://www.docker.com/products/docker-desktop) installed, you should be able to run `$ docker-compose up --build` and be off and running.
+
+### Example: Run Elixir in multiple containers
+
+This example - based off the original blog post [Running Elixir in Docker Containers](https://www.poeticoding.com/running-elixir-in-docker-containers/) - is intended to show how you can poke around with [Elixir](https://elixir-lang.org) and have multiple Docker containers communicate with each other.
