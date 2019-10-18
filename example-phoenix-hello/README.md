@@ -13,7 +13,7 @@ The easiest way to use this repo is to have [Docker Desktop](https://www.docker.
 Once Docker has been installed on your system, you can spin up the project by running:
 
 ```sh
-$ docker-compose up
+$ docker-compose up --build
 ```
 
 When you're ready to spin down the project, you can run:
