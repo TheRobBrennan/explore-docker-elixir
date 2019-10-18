@@ -1,6 +1,6 @@
 # Welcome
 
-This project is meant to serve as a starting point for exploring Elixir using Docker.
+This project is meant to serve as a starting point for exploring [Elixir](https://elixir-lang.org) using [Docker](https://www.docker.com).
 
 ## Getting started
 
@@ -24,7 +24,7 @@ $ docker-compose down
 
 #### Create a Phoenix app
 
-We can run mix phx.new from any directory in order to bootstrap our Phoenix application. Phoenix will accept either an absolute or relative path for the directory of our new project. Assuming that the name of our application is hello, let's run the following command:
+We can run mix phx.new from any directory in order to bootstrap our [Phoenix](https://phoenixframework.org) application. [Phoenix](https://phoenixframework.org) will accept either an absolute or relative path for the directory of our new project. Assuming that the name of our application is hello, let's run the following command:
 
 ```sh
 $ mix phx.new hello
@@ -46,7 +46,7 @@ You can also run your app inside IEx (Interactive Elixir) as:
     $ iex -S mix phx.server
 ```
 
-Assuming your database server is running (you DID `Start the back-end PostgreSQL server` as directed above, right), let's ollow the advice above:
+Assuming your database server is running (you DID `Start the back-end PostgreSQL server` as directed above, right), let's follow the advice above:
 
 ```sh
 $ cd hello
@@ -65,7 +65,7 @@ $ iex -S mix phx.server
 
 ### Local development environment
 
-Before we Dockerize our application, let's take a look at what we would need to do if we wanted to install Elixir on our machine.
+Before we Dockerize our application, let's take a look at what we would need to do if we wanted to install [Elixir](https://elixir-lang.org) on our machine.
 
 #### Install Elixir
 
@@ -85,7 +85,7 @@ $ brew upgrade elixir
 
 #### Install Phoenix
 
-Before we install Phoenix, let's verify that we are on Elixir 1.5 or greater, and Erlang 18 or greater:
+Before we install [Phoenix](https://phoenixframework.org), let's verify that we are on [Elixir](https://elixir-lang.org) 1.5 or greater, and Erlang 18 or greater:
 
 ```sh
 $ elixir -v
@@ -95,7 +95,7 @@ Erlang/OTP 22 [erts-10.5.2] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threa
 Elixir 1.9.2 (compiled with Erlang/OTP 22)
 ```
 
-Once we have Elixir and Erlang, we are ready to install the Phoenix Mix archive. A Mix archive is a Zip file which contains an application as well as its compiled BEAM files. It is tied to a specific version of the application. The archive is what we will use to generate a new, base Phoenix application which we can build from.
+Once we have [Elixir](https://elixir-lang.org) and Erlang, we are ready to install the [Phoenix](https://phoenixframework.org) Mix archive. A Mix archive is a Zip file which contains an application as well as its compiled BEAM files. It is tied to a specific version of the application. The archive is what we will use to generate a new, base Phoenix application which we can build from.
 
 ```sh
 $ mix archive.install hex phx_new 1.4.10
