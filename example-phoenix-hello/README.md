@@ -24,26 +24,26 @@ $ docker-compose down
 
 #### Create a Phoenix app
 
-We can run mix phx.new from any directory in order to bootstrap our [Phoenix](https://phoenixframework.org) application. [Phoenix](https://phoenixframework.org) will accept either an absolute or relative path for the directory of our new project. Assuming that the name of our application is hello, let's run the following command:
+We can run mix phx.new from any directory to bootstrap our [Phoenix](https://phoenixframework.org) application. [Phoenix](https://phoenixframework.org) will accept either an absolute or relative path for the directory of our new project. Assuming that the name of our application is hello, let's run the following command:
 
 ```sh
 $ mix phx.new hello
 
 We are almost there! The following steps are missing:
 
-    $ cd hello
+ $ cd hello
 
 Then configure your database in config/dev.exs and run:
 
-    $ mix ecto.create
+ $ mix ecto.create
 
 Start your Phoenix app with:
 
-    $ mix phx.server
+ $ mix phx.server
 
 You can also run your app inside IEx (Interactive Elixir) as:
 
-    $ iex -S mix phx.server
+ $ iex -S mix phx.server
 ```
 
 Assuming your database server is running (you DID `Start the back-end PostgreSQL server` as directed above, right), let's follow the advice above:
@@ -95,7 +95,7 @@ Erlang/OTP 22 [erts-10.5.2] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threa
 Elixir 1.9.2 (compiled with Erlang/OTP 22)
 ```
 
-Once we have [Elixir](https://elixir-lang.org) and Erlang, we are ready to install the [Phoenix](https://phoenixframework.org) Mix archive. A Mix archive is a Zip file which contains an application as well as its compiled BEAM files. It is tied to a specific version of the application. The archive is what we will use to generate a new, base Phoenix application which we can build from.
+Once we have [Elixir](https://elixir-lang.org) and Erlang, we are ready to install the [Phoenix](https://phoenixframework.org) Mix archive. A Mix archive is a Zip file that contains an application as well as its compiled BEAM files. It is tied to a specific version of the application. The archive is what we will use to generate a new, base Phoenix application which we can build from.
 
 ```sh
 $ mix archive.install hex phx_new 1.4.10
