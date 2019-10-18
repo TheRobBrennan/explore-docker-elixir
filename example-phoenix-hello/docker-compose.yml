@@ -2,13 +2,13 @@
 version: '3'
 
 services:
-  phoenix:
+  phoenix-dev:
     build:
       context: ./hello
     environment:
       PGUSER: postgres
       PGPASSWORD: postgres
-      PGDATABASE: postgres
+      PGDATABASE: hello_dev
       PGPORT: 5432
       # PGHOST refers to the service postgres that we have defined in this docker-compose file
       PGHOST: postgres
