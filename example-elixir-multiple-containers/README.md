@@ -122,7 +122,7 @@ You can use "mix" to compile it, test it, and more:
 Run "mix help" for more commands.
 
 # Let’s move inside the crypto directory and add a dependency to crypto/mix.exs
-$ cd crypto
+$ cd example-elixir-multiple-containers/crypto
 $ docker container run --rm -v $PWD:/app -w /app -it elixir:1.9.2 mix deps.get
 
 Could not find Hex, which is needed to build dependency :poison
