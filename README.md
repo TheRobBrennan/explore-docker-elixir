@@ -4,6 +4,10 @@ This project is meant to serve as a starting point for exploring [Elixir](https:
 
 Developing [Elixir](https://elixir-lang.org) natively on your local machine appears to be a **much, much better** way to go. However, it doesn't hurt to begin experimenting and see what limitations or frustrations may present themselves.
 
+Deploying [Elixir](https://elixir-lang.org) is a whole 'nother can of worms. These examples are from a cloud-native perspective - which means that a lot of the [Elixir](https://elixir-lang.org) goodness is left untapped. While some simpler applications may lend themselves well to this approach - think relatively simple servers or applications - we need to consider how we might handle more intricate [Phoenix](https://phoenixframework.org) and/or [Elixir](https://elixir-lang.org) applications.
+
+Daniel Azuma presented a great talk at [ElixirConf 2018 - Docker and OTP Friends or Foes - Daniel Azuma](https://www.youtube.com/watch?v=nLApFANtkHs&feature=youtu.be). This is a must-see talk - ~38:52 in length and a great overview of considerations deploying Elixir apps. The live demo at the end brings it all together in a practical example using Kubernetes performing a live update of the game without losing state. The entire talk - including a summary, links to resources and libraries used in the talk, and the slide deck - is available at [https://daniel-azuma.com/articles/talks/elixirconf-2018](https://daniel-azuma.com/articles/talks/elixirconf-2018).
+
 ## Getting started
 
 The easiest way to use this repo is to have [Docker Desktop](https://www.docker.com/products/docker-desktop) installed and configured on your development machine.
